@@ -296,7 +296,7 @@ form > input[type="submit"]:hover {
   }
   .mbm-difference {
     mix-blend-mode: difference;
-    margin-top: 4vw;
+    margin-top: 12vw;
 }
 
 }
