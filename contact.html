@@ -13,8 +13,8 @@
     <meta content="About" property="twitter:title" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Webflow" name="generator" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/wondrous.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/wondrous.css" />
     <script
       src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
       type="text/javascript"
@@ -70,11 +70,9 @@
       <div data-w-id="8e4ece91-c709-91d5-9415-33e0ef8e7ae6" class="cursor-dot">
         <h1 class="caption center white cursor">watch</h1>
       </div>
-      <div class="w-embed">
-      </div>
+      <div class="w-embed"></div>
     </div>
-    <div id="Top" class="w-embed">
-    </div>
+    <div id="Top" class="w-embed"></div>
     <div id="luxy" class="smooth-wrapper">
       <div
         data-w-id="b695732a-2c0e-59c4-52c3-759c0a48b5a8"
@@ -156,19 +154,30 @@
           <div class="divider _1sc"></div>
           <div class="div-block-71">
             <h1 class="caption center white">SAY HI !</h1>
-        </div>
-        <div id="Bottom" class="div-block-70">
+          </div>
+          <div id="Bottom" class="div-block-70">
             <h1 class="caption center gray">Drop US A LINE in direct</h1>
-            <div class="div-block-69"><a data-w-id="228aec3c-92c0-5583-158f-2bbba52f4233"
-                    href="https://instagram.com/wondrousbrandworld" target="_blank" class="link-52-bold">@Wondrous</a></div>
-        </div>
-        <div class="div-block-70">
-            <h1 class="caption center gray">or For Business Enquiries</h1>
-            <div class="div-block-69"><a href="mailto:contact@wondrous.com"
-                    data-w-id="228aec3c-92c0-5583-158f-2bbba52f4239" class="link-52-bold">contact@wondrous.com</a>
+            <div class="div-block-69">
+              <a
+                data-w-id="228aec3c-92c0-5583-158f-2bbba52f4233"
+                href="https://instagram.com/wondrousbrandworld"
+                target="_blank"
+                class="link-52-bold"
+                >@Wondrous</a
+              >
             </div>
-        </div>
-
+          </div>
+          <div class="div-block-70">
+            <h1 class="caption center gray">or For Business Enquiries</h1>
+            <div class="div-block-69">
+              <a
+                href="mailto:contact@wondrous.com"
+                data-w-id="228aec3c-92c0-5583-158f-2bbba52f4239"
+                class="link-52-bold"
+                >contact@wondrous.com</a
+              >
+            </div>
+          </div>
         </div>
         <!-- <div class="div-block-131">
                 <div class="div-block-2"></div>
@@ -184,12 +193,35 @@
               data-w-id="e02a7e3b-578a-bee6-58e4-40fbb6ce4ae4"
               class="div-block-188"
             >
-            <form>
-                <input type="text" placeholder="Name (required)" required>
-                <input type="email" placeholder="Email Address (required)" required>
-                <input type="text" placeholder="Phone No. (required)" required>
-                <textarea placeholder="Message (required)" required></textarea>
-                <input type="submit" value="Submit" class="submit-btn"  onclick="sendEmail()" >
+              <form onsubmit="sendEmail(event)">
+                <input
+                  type="text"
+                  name="username"
+                  id="id_name"
+                  placeholder="Name (required)"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  id="id_email"
+                  placeholder="Email Address (required)"
+                  required
+                />
+                <input
+                  type="text"
+                  name="phoneno"
+                  id="id_phone"
+                  placeholder="Phone No. (required)"
+                  required
+                />
+                <textarea
+                  name="message"
+                  id="id_message"
+                  placeholder="Message (required)"
+                  required
+                ></textarea>
+                <input type="submit" value="Submit" class="submit-btn" />
                 <!-- <input type="button" value="Send Email" onclick="sendEmail()" />  -->
               </form>
             </div>
@@ -201,11 +233,23 @@
           <div>
             <h1 class="caption">Wondrous©<br /></h1>
           </div>
-          <div id="w-node-a131b2b3-943c-4c7d-1156-fa726e1e875e-6e1e8719" class="div-block-73">
-            <a data-w-id="a131b2b3-943c-4c7d-1156-fa726e1e875f" href="https://www.instagram.com/izbash/" target="_blank"
-              class="caption link">instagram</a><a data-w-id="a131b2b3-943c-4c7d-1156-fa726e1e8761"
-              href="https://ru-ru.facebook.com/people/Daria-Izbash/100010107697775/" target="_blank"
-              class="caption link">facebook</a>
+          <div
+            id="w-node-a131b2b3-943c-4c7d-1156-fa726e1e875e-6e1e8719"
+            class="div-block-73"
+          >
+            <a
+              data-w-id="a131b2b3-943c-4c7d-1156-fa726e1e875f"
+              href="https://www.instagram.com/izbash/"
+              target="_blank"
+              class="caption link"
+              >instagram</a
+            ><a
+              data-w-id="a131b2b3-943c-4c7d-1156-fa726e1e8761"
+              href="https://ru-ru.facebook.com/people/Daria-Izbash/100010107697775/"
+              target="_blank"
+              class="caption link"
+              >facebook</a
+            >
           </div>
           <div id="w-node-a131b2b3-943c-4c7d-1156-fa726e1e8763-6e1e8719">
             <h1 class="caption">(2022), all rights reserved</h1>
@@ -254,37 +298,33 @@
         $(".thevideo")[0].pause();
       }
     </script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script> 
-    <script type="text/javascript"> 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript">
+      function sendEmail(e) {
+        e.preventDefault();
+        const name = document.getElementById("id_name").value;
+        const email = document.getElementById("id_email").value;
+        const phoneNumber = document.getElementById("id_phone").value;
+        const message = document.getElementById("id_message").value;
 
-      function sendEmail() { 
-  
-        Email.send({ 
-  
-          Host: "smtp.gmail.com", 
-  
-          Username: "sender@email_address.com", 
-  
-          Password: "Enter your password", 
-  
-          To: 'receiver@email_address.com', 
-  
-          From: "sender@email_address.com", 
-  
-          Subject: "Sending Email using javascript", 
-  
-          Body: "Well that was easy!!", 
-  
-        }) 
-  
-          .then(function (message) { 
-  
-            alert("mail sent successfully") 
-  
-          }); 
-  
-      } 
-  
+        Email.send({
+          Host: "smtp.gmail.com",
+
+          Username: "<username>",
+
+          Password: "<password>",
+
+          To: email,
+
+          From: "<email>",
+
+          Subject: "Sending Email using javascript",
+
+          Body: message + phoneNumber,
+        }).then(function (message) {
+          alert("mail sent successfully", message);
+        });
+      }
     </script>
   </body>
 </html>
