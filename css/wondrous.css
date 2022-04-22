@@ -5980,6 +5980,8 @@ h1 {
     letter-spacing: -8px;
   }
 
+ 
+
   .div-block-25 {
     margin-top: -33px;
   }
@@ -9435,8 +9437,11 @@ h1 {
   .paragraph {
     font-size: 6vw;
     line-height: 7vw;
-    margin-top: 265rem;
+    margin-top: 4vw;
     padding: 32px 0px;
+}
+.custom-diff{
+  margin-top: 16vw !important;
 }
 
   .div-block-95 {
@@ -10244,4 +10249,8 @@ h1.heading-29.mbm-difference.internal-page {
 
 form > input[type="submit"]:hover {
   background-color: #dddddd;
+}
+
+.custom-diff{
+  margin-top: 8vw;
 }
